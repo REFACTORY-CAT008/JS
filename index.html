@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Shark World</h1>
+            <p>World's leading source on<strong>Shark</strong>related information</p>
+            <h2>Types Of Sharks</h2>
+            <ul>
+                <li>Hammerhead</li>
+                <li>Tiger</li>
+                <li>Great White</li>
+            </ul>
+        <h1><strong>My Todo List</strong></h1>
+        <ol>
+            <li>Pay bills</li>
+            <li>Buy groceries</li>
+            <li>Feed the pets</li>
+            <li>Do laundry</li>
+        </ol>
+        <script>
+            const h1 = document.getElementsByTagName('h1')[0]
+            const p = document.getElementsByTagName('p')[0]
+            const ul = document.getElementsByTagName('ul')[0]
+            const tiger = ul.children[1]
+            const text = document.createTextNode('Sharks')
+            const todolist = document.getElementById('my-list');
+            const newTodo = document.createElement('li');
+
+            newTodo.textContent = 'Favourite Todo List'
+
+            for(let a of ul.children){
+                a.style.background = 'yellow';
+            }
+            document.body.children[3].lastElementChild.style.background = 'fuchsia'
+            tiger.nextElementSibling.style.background= 'green'
+            tiger.previousElementSibling.style.background = 'purple'
+
+            
+        </script>
+    </body>
+</html>
+
+
+
